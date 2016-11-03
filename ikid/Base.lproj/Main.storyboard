@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="865" y="518"/>
         </scene>
-        <!--Good View Controller-->
+        <!--Good2 View Controller-->
         <scene sceneID="TzB-wm-9lR">
             <objects>
-                <viewController id="5oG-kV-aAn" customClass="goodViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="good2" id="5oG-kV-aAn" customClass="good2ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bmh-HV-8Xi"/>
                         <viewControllerLayoutGuide type="bottom" id="rby-y2-ATR"/>
@@ -53,7 +53,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <tabBarItem title="Good" id="ZTq-Na-Fsa" userLabel="item1"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNm-oX-sfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-766" y="871"/>
@@ -61,7 +60,7 @@
         <!--Good-->
         <scene sceneID="WfX-E0-q4Y">
             <objects>
-                <viewController id="MTh-5L-Jjf" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="good" id="MTh-5L-Jjf" customClass="goodViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zch-xh-Jne"/>
                         <viewControllerLayoutGuide type="bottom" id="JPY-yQ-hHE"/>
@@ -138,6 +137,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5wo-Ak-uSZ"/>
+        <segue reference="cDu-YA-P9w"/>
     </inferredMetricsTieBreakers>
 </document>
