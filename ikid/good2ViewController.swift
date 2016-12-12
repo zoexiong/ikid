@@ -10,6 +10,8 @@ import UIKit
 
 class good2ViewController: UIViewController {
 
+    @IBOutlet weak var punchline: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
