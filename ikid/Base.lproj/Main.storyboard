@@ -39,16 +39,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's the object-oriented way to become wealthy?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEv-CA-hgm">
-                                <rect key="frame" x="45" y="225" width="285" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's the object-oriented way to become wealthy?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEv-CA-hgm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="546"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-Zh-B7k">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-Zh-B7k">
                                 <rect key="frame" x="232" y="438" width="98" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.3601637956" blue="0.41784803279999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Next">
@@ -60,6 +58,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gEv-CA-hgm" firstAttribute="leading" secondItem="kT7-YO-jLN" secondAttribute="leadingMargin" id="1Gb-Et-jVc"/>
+                            <constraint firstItem="AUR-Vc-g9Z" firstAttribute="top" secondItem="gxd-Zh-B7k" secondAttribute="bottom" constant="120" id="4Su-sW-sUk"/>
+                            <constraint firstItem="AUR-Vc-g9Z" firstAttribute="top" secondItem="gEv-CA-hgm" secondAttribute="bottom" constant="8" id="Kog-H4-0fg"/>
+                            <constraint firstItem="gEv-CA-hgm" firstAttribute="top" secondItem="hpl-mN-H9x" secondAttribute="bottom" id="TjG-hg-Ogk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gEv-CA-hgm" secondAttribute="trailing" id="jwg-Qd-gZE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gxd-Zh-B7k" secondAttribute="trailing" constant="29" id="poL-B2-kbQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" image="Layer-82_48px" id="Og6-ta-VNO"/>
                     <navigationItem key="navigationItem" id="Gr5-Ne-pvz"/>
@@ -151,9 +157,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqx-qS-Zb5">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqx-qS-Zb5">
                                 <rect key="frame" x="221" y="438" width="98" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.3601637956" blue="0.41784803279999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Next">
@@ -163,15 +168,22 @@
                                     <segue destination="5oG-kV-aAn" kind="show" id="cvq-ma-7eq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is library important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sai-jw-Mrt">
-                                <rect key="frame" x="63" y="244" width="267" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Why is library important?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sai-jw-Mrt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sai-jw-Mrt" firstAttribute="leading" secondItem="nIp-hG-kVa" secondAttribute="leadingMargin" id="8oo-4X-eWU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sai-jw-Mrt" secondAttribute="trailing" id="JTE-DB-b6X"/>
+                            <constraint firstItem="JPY-yQ-hHE" firstAttribute="top" secondItem="Sai-jw-Mrt" secondAttribute="bottom" id="KfZ-GB-mee"/>
+                            <constraint firstItem="JPY-yQ-hHE" firstAttribute="top" secondItem="eqx-qS-Zb5" secondAttribute="bottom" constant="120" id="RmP-aX-6Kz"/>
+                            <constraint firstItem="Sai-jw-Mrt" firstAttribute="top" secondItem="Zch-xh-Jne" secondAttribute="bottom" id="jDI-4b-BLv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eqx-qS-Zb5" secondAttribute="trailing" constant="40" id="waq-wn-JfK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good" image="Layer-55_48px" id="Iuc-9U-sJ4" userLabel="good"/>
                     <navigationItem key="navigationItem" id="UmC-hR-cVA"/>
@@ -220,8 +232,8 @@
                                     <segue destination="bM1-Vg-HVS" kind="show" id="ohm-hh-Rwk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which came first, dad or child?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-v4-jjr">
-                                <rect key="frame" x="0.0" y="263" width="379" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Which came first, dad or child?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-v4-jjr">
+                                <rect key="frame" x="-2" y="72" width="379" height="546"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -230,10 +242,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="irx-bb-IFe" secondAttribute="trailing" constant="41" id="FvW-8S-Hz7"/>
-                            <constraint firstItem="JDe-v4-jjr" firstAttribute="top" secondItem="xQT-Dx-3VO" secondAttribute="bottom" constant="199" id="HsU-Fp-TyC"/>
-                            <constraint firstItem="JDe-v4-jjr" firstAttribute="leading" secondItem="iDj-6C-5WM" secondAttribute="leading" id="TFV-EY-R4M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JDe-v4-jjr" secondAttribute="trailing" constant="-2" id="IMd-OF-o2F"/>
                             <constraint firstItem="NqC-9r-fF4" firstAttribute="top" secondItem="irx-bb-IFe" secondAttribute="bottom" constant="75" id="Y7L-cv-Sdb"/>
-                            <constraint firstAttribute="trailing" secondItem="JDe-v4-jjr" secondAttribute="trailing" constant="-4" id="g0l-pP-W8e"/>
+                            <constraint firstItem="NqC-9r-fF4" firstAttribute="top" secondItem="JDe-v4-jjr" secondAttribute="bottom" id="igP-kk-X6j"/>
+                            <constraint firstItem="JDe-v4-jjr" firstAttribute="leading" secondItem="iDj-6C-5WM" secondAttribute="leadingMargin" constant="-2" id="kb4-tZ-oZg"/>
+                            <constraint firstItem="JDe-v4-jjr" firstAttribute="top" secondItem="xQT-Dx-3VO" secondAttribute="bottom" constant="8" id="yBA-wk-zZc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad" image="Layer-53_48px" id="jX3-gd-y2v"/>
@@ -264,6 +277,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="i63-ZS-aWH" secondAttribute="trailing" constant="34" id="29P-Bj-RF0"/>
                             <constraint firstItem="i63-ZS-aWH" firstAttribute="leading" secondItem="NqR-zh-6nI" secondAttribute="leadingMargin" constant="32" id="BEM-JB-tEM"/>
                             <constraint firstItem="i63-ZS-aWH" firstAttribute="top" secondItem="d87-0t-89h" secondAttribute="bottom" constant="227" id="ePh-Rp-dRh"/>
                         </constraints>
