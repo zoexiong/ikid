@@ -121,6 +121,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="yIX-Dn-Fdm">
                                 <rect key="frame" x="43" y="173" width="290" height="337"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="337" id="Unq-xt-fNb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="fBS-HN-ci6"/>
                                     <constraint firstAttribute="height" constant="337" id="s8Y-Ox-hUM"/>
                                     <constraint firstAttribute="width" constant="290" id="vv2-RZ-FKn"/>
                                 </constraints>
@@ -129,7 +131,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yIX-Dn-Fdm" firstAttribute="leading" secondItem="GvU-Ai-aGi" secondAttribute="leadingMargin" constant="27" id="0mV-ek-0zt"/>
-                            <constraint firstItem="yIX-Dn-Fdm" firstAttribute="top" secondItem="bmh-HV-8Xi" secondAttribute="bottom" constant="100" id="h96-Xr-oQ5"/>
+                            <constraint firstItem="yIX-Dn-Fdm" firstAttribute="centerX" secondItem="GvU-Ai-aGi" secondAttribute="centerX" id="b9O-1w-XuH"/>
+                            <constraint firstItem="yIX-Dn-Fdm" firstAttribute="centerY" secondItem="GvU-Ai-aGi" secondAttribute="centerY" id="khn-zS-D6d"/>
                         </constraints>
                     </view>
                 </viewController>
