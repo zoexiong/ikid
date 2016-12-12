@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -106,12 +107,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="yIX-Dn-Fdm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="yIX-Dn-Fdm">
                                 <rect key="frame" x="43" y="173" width="290" height="337"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIX-Dn-Fdm" firstAttribute="top" secondItem="bmh-HV-8Xi" secondAttribute="bottom" constant="109" id="VJw-oO-Rex"/>
+                            <constraint firstItem="yIX-Dn-Fdm" firstAttribute="leading" secondItem="GvU-Ai-aGi" secondAttribute="leadingMargin" constant="27" id="ean-6w-7a6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNm-oX-sfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -205,9 +209,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irx-bb-IFe">
-                                <rect key="frame" x="212" y="471" width="98" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irx-bb-IFe">
+                                <rect key="frame" x="220" y="483" width="98" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.3601637956" blue="0.41784803279999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Next">
@@ -217,22 +220,28 @@
                                     <segue destination="bM1-Vg-HVS" kind="show" id="ohm-hh-Rwk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which came first, dad or child?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-v4-jjr">
-                                <rect key="frame" x="40" y="277" width="278" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which came first, dad or child?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-v4-jjr">
+                                <rect key="frame" x="0.0" y="263" width="379" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="irx-bb-IFe" secondAttribute="trailing" constant="41" id="FvW-8S-Hz7"/>
+                            <constraint firstItem="JDe-v4-jjr" firstAttribute="top" secondItem="xQT-Dx-3VO" secondAttribute="bottom" constant="199" id="HsU-Fp-TyC"/>
+                            <constraint firstItem="JDe-v4-jjr" firstAttribute="leading" secondItem="iDj-6C-5WM" secondAttribute="leading" id="TFV-EY-R4M"/>
+                            <constraint firstItem="NqC-9r-fF4" firstAttribute="top" secondItem="irx-bb-IFe" secondAttribute="bottom" constant="75" id="Y7L-cv-Sdb"/>
+                            <constraint firstAttribute="trailing" secondItem="JDe-v4-jjr" secondAttribute="trailing" constant="-4" id="g0l-pP-W8e"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad" image="Layer-53_48px" id="jX3-gd-y2v"/>
                     <navigationItem key="navigationItem" id="INL-Cx-FTa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyE-Lm-dFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="-591"/>
+            <point key="canvasLocation" x="1808.8" y="-591.45427286356824"/>
         </scene>
         <!--Dad2 View Controller-->
         <scene sceneID="SAF-EV-98a">
@@ -246,15 +255,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child. Because dad can only became dad when the child was born" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i63-ZS-aWH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Child. Because dad can only became dad when the child was born" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i63-ZS-aWH">
                                 <rect key="frame" x="48" y="291" width="277" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i63-ZS-aWH" firstAttribute="leading" secondItem="NqR-zh-6nI" secondAttribute="leadingMargin" constant="32" id="BEM-JB-tEM"/>
+                            <constraint firstItem="i63-ZS-aWH" firstAttribute="top" secondItem="d87-0t-89h" secondAttribute="bottom" constant="227" id="ePh-Rp-dRh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aP-HS-8ne" userLabel="First Responder" sceneMemberID="firstResponder"/>
